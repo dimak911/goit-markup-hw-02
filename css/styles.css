@@ -1,0 +1,97 @@
+/* основная палитра*/
+
+:root {
+  --prime-color: #2196f3;
+  --header-color: #212121;
+  --main-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --prime-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.list {
+  list-style: none;
+}
+
+/* логотип */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-text {
+  color: var(--prime-color);
+}
+
+.logo-text-header {
+  color: var(--header-color);
+}
+.logo-text-footer {
+  color: var(--secondary-text-color);
+}
+
+/* главное меню */
+.main-menu a {
+  color: var(--header-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-menu a:hover {
+  color: var(--prime-color);
+}
+
+.contacts-header a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-header a:hover {
+  color: var(--prime-color);
+}
+
+/* герой */
+.hero {
+  background-color: var(--prime-background-color);
+}
+
+.hero-text {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.hero-button {
+  color: var(--secondary-text-color);
+  background-color: var(--prime-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+/* футер */
+.footer {
+  background-color: var(--prime-background-color);
+}
