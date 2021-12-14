@@ -1,5 +1,4 @@
 /* основная палитра*/
-
 :root {
   --prime-color: #2196f3;
   --header-color: #212121;
@@ -8,12 +7,13 @@
   --prime-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
 }
-
+/* сброс отступов */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* основной шрифт и цвет */
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -21,6 +21,7 @@ body {
   color: var(--main-text-color);
 }
 
+/* сброс стиля у списка */
 .list {
   list-style: none;
 }
@@ -47,7 +48,7 @@ body {
 }
 
 /* главное меню */
-.main-menu a {
+.main-menu-item {
   color: var(--header-color);
   text-decoration: none;
   font-weight: 500;
@@ -56,11 +57,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.main-menu a:hover {
+.main-menu-item:hover,
+.main-menu-item:focus {
   color: var(--prime-color);
 }
 
-.contacts-header a {
+.contacts-item {
   text-decoration: none;
   color: var(--main-text-color);
   font-weight: 500;
@@ -69,7 +71,10 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts-header a:hover {
+.contacts-item:hover,
+.contacts-item:focus,
+.address-contacts-item:hover,
+.address-contacts-item:focus {
   color: var(--prime-color);
 }
 
@@ -90,24 +95,29 @@ body {
 
 .hero-button {
   color: var(--secondary-text-color);
-  background-color: var(--prime-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
+  cursor: pointer;
+
+  background-color: var(--prime-color);
 }
 
 /* список особенностей */
 
 /* скрытый заголовок */
-.visibility-hidden {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .features-header {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -124,7 +134,6 @@ body {
 /* сервисы */
 .services-header,
 .team-header {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -147,20 +156,58 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* страница портфолио */
+
+/* фильтр */
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  cursor: pointer;
+
+  background-color: var(--secondary-background-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--secondary-text-color);
+
+  background-color: var(--prime-color);
+}
+
+/* примеры работ */
+
+.work-header {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+}
+
+.work-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
 /* футер */
 .footer {
   background-color: var(--prime-background-color);
 }
 
 .address {
-  font-style: normal;
+  font-style: inherit;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-.address a {
+.address-contacts-item {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
