@@ -7,11 +7,6 @@
   --prime-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
 }
-/* сброс отступов */
-* {
-  margin: 0;
-  padding: 0;
-}
 
 /* основной шрифт и цвет */
 body {
@@ -74,7 +69,9 @@ body {
 .contacts-item:hover,
 .contacts-item:focus,
 .address-contacts-item:hover,
-.address-contacts-item:focus {
+.address-contacts-item:focus,
+.address:hover,
+.address:focus {
   color: var(--prime-color);
 }
 
@@ -200,7 +197,8 @@ body {
 }
 
 .address {
-  font-style: inherit;
+  text-decoration: none;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
