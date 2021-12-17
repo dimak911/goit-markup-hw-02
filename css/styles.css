@@ -11,8 +11,6 @@
 /* основной шрифт и цвет */
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   color: var(--main-text-color);
 }
 
@@ -29,9 +27,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.logo-text {
   color: var(--prime-color);
 }
 
@@ -43,7 +38,7 @@ body {
 }
 
 /* главное меню */
-.main-menu-item {
+.main-menu-link {
   color: var(--header-color);
   text-decoration: none;
   font-weight: 500;
@@ -52,12 +47,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.main-menu-item:hover,
-.main-menu-item:focus {
+.main-menu-link:hover,
+.main-menu-link:focus {
   color: var(--prime-color);
 }
 
-.contacts-item {
+.contacts-link {
   text-decoration: none;
   color: var(--main-text-color);
   font-weight: 500;
@@ -66,12 +61,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts-item:hover,
-.contacts-item:focus,
-.address-contacts-item:hover,
-.address-contacts-item:focus,
-.address:hover,
-.address:focus {
+.contacts-link:hover,
+.contacts-link:focus,
+.address-contacts-link:hover,
+.address-contacts-link:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--prime-color);
 }
 
@@ -195,19 +190,20 @@ body {
 .footer {
   background-color: var(--prime-background-color);
 }
-
 .address {
-  text-decoration: none;
   font-style: normal;
+}
+
+.address-link {
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-.address-contacts-item {
+.address-contacts-link {
   text-decoration: none;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
